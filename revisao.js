@@ -19,7 +19,7 @@ else{
 while (acertou == false)
 {
     let guess = prompt("descubra a letra ou o número de 1 a 100! ")
-    var pos = alfabeto.indexOf(guess.toLowerCase())
+    var letraPos = alfabeto.indexOf(guess.toLowerCase())
 
     if(tipoDeVar == false){
 
@@ -37,4 +37,37 @@ while (acertou == false)
             console.log("tipo de variável errado!")
         }
     }
+    else{}
+
+    if (NumOrStr == 1 && alfabeto.indexOf(guess.toLowerCase()) != -1)
+    {
+        if(alfabeto.indexOf(guess.toLowerCase()) > varToGuess){
+            console.log("a letra vem antes")
+        }
+
+        else if(alfabeto.indexOf(guess.toLowerCase()) < varToGuess){
+            console.log("a letra vem depois")
+        }
+
+        else if(alfabeto.indexOf(guess.toLowerCase()) == varToGuess){
+            console.log("você acertou!")
+            acertou == true
+        }
+    }
+
+    else if (NumOrStr == 0 && isNaN(guess) == false)
+        {
+            if(guess > varToGuess){
+                console.log("a letra vem antes")
+            }
+    
+            else if( guess < varToGuess){
+                console.log("a letra vem depois")
+            }
+    
+            else if(guess == varToGuess){
+                console.log("você acertou!")
+                acertou == true
+            }
+        }
 }
