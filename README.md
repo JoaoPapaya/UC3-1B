@@ -33,8 +33,11 @@ Boas vindas! Este é meu caderno virtual. Aqui eu documento os conceitos aprendi
 - array.splice()
 - array.slice()
 
+### funções
+- function função(parâmetros){}
 
 ## Atividades desenvolvidas
+- jogo pokemon [aqui](https://codepen.io/Jo-o-Barboza/pen/poMoRbE)
 
 link para meu perfil no [codepen](https://codepen.io/Jo-o-Barboza)
 
